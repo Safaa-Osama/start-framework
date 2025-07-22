@@ -1,0 +1,101 @@
+:root{
+  --main-color: #1ABC9C;
+  --second-color: #2C3E50;
+  --text-second-color : white
+}
+
+body{
+  margin: 0;
+}
+.heading{
+  margin-block: 20px;
+  line-height: 48px;
+  font-size: 40px;
+  font-weight: 700 !important;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
+;
+}
+
+.bgSecondColor{
+  background-color: var(--second-color);
+}
+label{
+  color: var(--main-color);
+}
+
+.bgMainColor{
+  background-color: var(--main-color);
+}
+
+.textSecondColor{
+  color: var(--second-color);
+}
+.logo{
+  margin-block: 20px;
+  line-height: 48px;
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
+;
+}
+
+
+input{
+  margin-block: 30px;
+}
+
+.icons ul li{
+  padding: 10px;
+  margin-right: 5px;
+  list-style: none;
+  border: white 1px solid;
+  border-radius: 50%;
+}
+
+nav{
+  background-color: #2C3E50;
+}
+nav ul li{
+  padding-right: 25px;
+  width: fit-content;
+
+}
+.vh-75{
+  height: 500px;
+}
+.about_ {
+ background-color: var(--main-color);
+
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+border-radius: 10%;
+ background-color: var(--main-color);
+
+}
+.contact-btn{
+ background-color: var(--main-color);
+color: white;
+}
+.contact-btn:hover{
+ background-color: var(--main-color);
+color: white;
+
+}
+.copyright{
+  background-color: #1A252F;
+  color: white;
+    text-align: center;
+
+}
+.footer_{
+  background-color: #2C3E50;
+}
+
+.line {
+  width: 100px;
+  height: 4px;
+}

@@ -1,30 +1,20 @@
 :root{
   --main-color: #1ABC9C;
   --second-color: #2C3E50;
-  --text-second-color : white
 }
-
-body{
-  margin: 0;
-}
-.heading{
-  margin-block: 20px;
-  line-height: 48px;
-  font-size: 40px;
-  font-weight: 700 !important;
-  text-transform: uppercase;
-  text-align: center;
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
-;
-}
-
 .bgSecondColor{
   background-color: var(--second-color);
 }
-label{
-  color: var(--main-color);
+.w-20{
+  width: 20%;
 }
-
+.inner .layer {
+  opacity: 0;
+  transition: all 0.7s ease;
+}
+.inner:hover .layer {
+  opacity: 1;
+}
 .bgMainColor{
   background-color: var(--main-color);
 }
@@ -32,8 +22,7 @@ label{
 .textSecondColor{
   color: var(--second-color);
 }
-.logo{
-  margin-block: 20px;
+h1{
   line-height: 48px;
   font-size: 32px;
   font-weight: 700;
@@ -42,11 +31,10 @@ label{
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
 ;
 }
-
-
-input{
-  margin-block: 30px;
+.navbar {
+  transition: all 0.3s ease; 
 }
+
 
 .icons ul li{
   padding: 10px;
@@ -58,19 +46,25 @@ input{
 
 nav{
   background-color: #2C3E50;
+  
 }
 nav ul li{
   padding-right: 25px;
   width: fit-content;
 
 }
-.vh-75{
-  height: 500px;
+.content{
+  min-height: calc(-90px + 100vh);
+  margin-top: 100px;
+}
+.content>div{
+min-height: inherit;
 }
 .about_ {
  background-color: var(--main-color);
 
 }
+
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
 border-radius: 10%;
  background-color: var(--main-color);
@@ -93,9 +87,25 @@ color: white;
 }
 .footer_{
   background-color: #2C3E50;
+  padding-block: 80px;
 }
 
 .line {
   width: 100px;
   height: 4px;
+}
+
+label{
+  color: var(--main-color);
+  top: 30px !important;
+  bottom: 5px;
+  opacity: 0;
+  transition: all .5s ease;
+}
+input{
+  margin-block: 30px;
+}
+.activate{
+ top: 0;
+  opacity: 1;
 }

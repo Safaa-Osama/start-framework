@@ -3,7 +3,7 @@ import Heading from '../Heading/Heading'
 
 export default function About() {
   return <>
-    <div className="about_ container-fluid d-flex flex-column align-content-center justify-content-center vh-75">
+    <div className="about_ m-top container-fluid d-flex flex-column align-items-center justify-content-center vh-custom">
                   <Heading title='about component' textColor="text-white" bgColor="bg-white" />
 
       <div className="row container mx-auto">

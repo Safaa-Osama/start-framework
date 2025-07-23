@@ -13,94 +13,73 @@ export default function Portofolio() {
 
   return (
     <>
-      <div className="container">
-        <Heading title="portfolio component" textColor="c" bgColor="bgSecondColor" />
+      <div className="m-top container">
+        <Heading title="portfolio component" textColor="textSecondColor" bgColor="bgSecondColor" />
 
-        <div className="row g-4 my-3">
+        <div className="row mt-5 g-4 my-3">
           <div className="col-lg-4 col-md-6">
             <div className="inner position-relative">
-              <img className="w-100 img-thumbnail" src={house} alt="first image" />
-              <div onClick={() => { setImageSec(house); setOpened(true); }} className="layer bg-opacity-25 position-absolute start-0 end-0 top-0 bottom-0
-               d-none justify-content-center align-items-center bgMainColor text-center text-white">
-                <i class="fa-solid fa-plus fa-4x"></i>
-              </div>
-
-              {/* <div className={`d-flex justify-content-center align-items-center light-box position-fixed start-0 top-0 vh-100 w-100 ${!opened && 'd-none'}`}>
-                <img className="w-25" src={house} alt="house" />
-              </div> */}
-            </div>
-          </div>
-
-           <div className="col-lg-4 col-md-6">
-            <div className="inner position-relative">
-              <img className="w-100 img-thumbnail" src={cake} alt="second image" />
-              <div onClick={() => { setImageSec(cake); setOpened(true); }} className="layer bg-opacity-25 position-absolute start-0 end-0 top-0 bottom-0
-               d-none justify-content-center align-items-center bgMainColor text-center text-white">
-                <i class="fa-solid fa-plus fa-4x"></i>
-              </div>
-
-              <div className={`d-flex justify-content-center align-items-center light-box position-fixed start-0 top-0 vh-100 w-100 ${!opened && 'd-none'}`}>
-                <img className="w-25" src={cake} alt="cake" />
+              <img className="w-100 rounded-3" src={house} alt="first image" />
+              <div onClick={() => { setImageSec(house); setOpened(true); }} className="layer rounded-3 position-absolute start-0 end-0 top-0 bottom-0
+               d-flex justify-content-center align-items-center bgMainColor text-center text-white">
+                <i className="fa-solid fa-plus fa-4x"></i>
               </div>
             </div>
           </div>
 
           <div className="col-lg-4 col-md-6">
             <div className="inner position-relative">
-              <img className="w-100 img-thumbnail" src={home} alt="first image" />
-              <div onClick={() => { setImageSec(home); setOpened(true); }} className="layer bg-opacity-25 position-absolute start-0 end-0 top-0 bottom-0
-               d-none justify-content-center align-items-center bgMainColor text-center text-white">
-                <i class="fa-solid fa-plus fa-4x"></i>
+              <img className="w-100 rounded-3" src={cake} alt="first image" />
+              <div onClick={() => { setImageSec(cake); setOpened(true); }} className="layer rounded-3 position-absolute start-0 end-0 top-0 bottom-0
+               d-flex justify-content-center align-items-center bgMainColor text-center text-white">
+                <i className="fa-solid fa-plus fa-4x img-show"></i>
               </div>
+            </div>
+          </div>
 
-              <div className={`d-flex justify-content-center align-items-center light-box position-fixed start-0 top-0 vh-100 w-100 ${!opened && 'd-none'}`}>
-                <img className="w-25" src={home} alt="home" />
+          <div className="col-lg-4 col-md-6">
+            <div className="inner position-relative">
+              <img className="w-100 rounded-3" src={home} alt="first image" />
+              <div onClick={() => { setImageSec(home); setOpened(true); }} className="layer rounded-3 position-absolute start-0 end-0 top-0 bottom-0
+               d-flex justify-content-center align-items-center bgMainColor text-center text-white">
+                <i className="fa-solid fa-plus fa-4x img-show"></i>
               </div>
             </div>
           </div>
         </div>
 
-        <LightBox opened={opened} image={imageSec} />
+        <LightBox opened={opened} setOpened={setOpened} image={imageSec} />
 
-       <div className="row g-4 my-3">
+        <div className="row g-4 my-3">
           <div className="col-lg-4 col-md-6">
             <div className="inner position-relative">
-              <img className="w-100 img-thumbnail" src={house} alt="first image" />
-              <div onClick={() => { setImageSec(house); setOpened(true); }} className="layer bg-opacity-25 position-absolute start-0 end-0 top-0 bottom-0
-               d-none justify-content-center align-items-center bgMainColor text-center text-white">
-                <i class="fa-solid fa-plus fa-4x"></i>
-              </div>
-
-              <div className={`d-flex justify-content-center align-items-center light-box position-fixed start-0 top-0 vh-100 w-100 ${!opened && 'd-none'}`}>
-                <img className="w-25" src={house} alt="house" />
-              </div>
-            </div>
-          </div>
-
-           <div className="col-lg-4 col-md-6">
-            <div className="inner position-relative">
-              <img className="w-100 img-thumbnail" src={cake} alt="second image" />
-              <div onClick={() => { setImageSec(cake); setOpened(true); }} className="layer bg-opacity-25 position-absolute start-0 end-0 top-0 bottom-0
-               d-none justify-content-center align-items-center bgMainColor text-center text-white">
-                <i class="fa-solid fa-plus fa-4x"></i>
-              </div>
-
-              <div className={`d-flex justify-content-center align-items-center light-box position-fixed start-0 top-0 vh-100 w-100 ${!opened && 'd-none'}`}>
-                <img className="w-25" src={cake} alt="cake" />
+              <img className="w-100 rounded-3" src={house} alt="first image" />
+              <div onClick={() => { setImageSec(house); setOpened(true); }} className="layer rounded-3 position-absolute start-0 end-0 top-0 bottom-0
+               d-flex justify-content-center align-items-center bgMainColor text-center text-white">
+                <i className="fa-solid fa-plus fa-4x img-show"></i>
               </div>
             </div>
           </div>
 
           <div className="col-lg-4 col-md-6">
             <div className="inner position-relative">
-              <img className="w-100 img-thumbnail" src={home} alt="first image" />
-              <div onClick={() => { setImageSec(home); setOpened(true); }} className="layer bg-opacity-25 position-absolute start-0 end-0 top-0 bottom-0
-               d-none justify-content-center align-items-center bgMainColor text-center text-white">
-                <i class="fa-solid fa-plus fa-4x"></i>
+              <img className="w-100 rounded-3" src={cake} alt="first image" />
+              <div onClick={() => { setImageSec(cake); setOpened(true); }} className="layer rounded-3 position-absolute start-0 end-0 top-0 bottom-0
+               d-flex justify-content-center align-items-center bgMainColor text-center text-white">
+                <i className="fa-solid fa-plus fa-4x img-show"></i>
               </div>
 
-              <div className={`d-flex justify-content-center align-items-center light-box position-fixed start-0 top-0 vh-100 w-100 ${!opened && 'd-none'}`}>
-                <img className="w-25" src={home} alt="home" />
+
+
+            </div>
+          </div>
+
+          <div className="col-lg-4 col-md-6">
+            <div className="inner position-relative">
+              <img className="w-100 rounded-3" src={home} alt="first image" />
+              <div onClick={() => { setImageSec(home); setOpened(true); }} className="layer rounded-3 position-absolute start-0 end-0 top-0 bottom-0
+               d-flex justify-content-center align-items-center bgMainColor text-center text-white">
+                <i className="fa-solid fa-plus fa-4x img-show"></i>
               </div>
             </div>
           </div>

@@ -1,14 +1,41 @@
 import React from 'react'
+import { useEffect, useState } from 'react';
 import { Link, NavLink } from 'react-router-dom'
 
 export default function Navbar() {
+const [reduceNav, setreduceNav] = useState(true)
+useEffect(() => {
+  //didmount
+ // const scrollEvent = ()=>setreduceNav(window.scrollY < 50);
+  window.addEventListener(
+    "scroll", ()=>{
+      if(window.scrollY > 50) {
+        setreduceNav(false);
+      }else{
+        setreduceNav(true);
+      }
+    }
+  )
+
+  return () => {
+    //didunmoumt
+    window.removeEventListener(
+    "scroll", ()=>{
+      if(window.scrollY > 50) {
+        setreduceNav(false);
+      }else{
+        setreduceNav(true);
+      }
+    }
+  )
+  }
+}, [])
+
   return (
-
-
-      <nav className="navbar navbar-expand-lg py-3 container-fluid position-fixed top-0 start-0 end-0 z-3">
-
+        <nav className={`navbar navbar-expand-lg container-fluid position-fixed top-0 start-0 end-0 z-1
+           ${reduceNav ? 'py-4' : '' }`}>
         <div className="container">
-          <Link className="navbar-brand text-uppercase text-white logo" to={'/'}>start Framework</Link>
+          <Link className=" fs-2 navbar-brand text-uppercase text-white logo" to={'/'}>start Framework</Link>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon" />
           </button>

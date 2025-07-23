@@ -1,9 +1,10 @@
 import React from "react";
 
 export default function Footer() {
+  // console.log(Footer.clienthieght);
   return <>
-      <div className="footer_ container-fluid">
-        <div className="text-center row py-5 container text-white mx-auto">
+      <div className="footer_ container-fluid mt-3">
+        <div className="text-center row container text-white mx-auto">
 
           <div className="col-lg-4">
             <div className="inner d-flex flex-column justify-content-center align-content-center">

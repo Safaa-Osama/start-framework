@@ -1,7 +1,12 @@
 import React from 'react'
 import Heading from '../Heading/Heading'
+import { useEffect } from 'react';
 
 export default function About() {
+  useEffect(() => {
+  document.title = "About";
+}, []);
+
   return <>
     <div className="about_ m-top container-fluid d-flex flex-column align-items-center justify-content-center vh-custom">
                   <Heading title='about component' textColor="text-white" bgColor="bg-white" />

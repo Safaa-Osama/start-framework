@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Heading from '../Heading/Heading'
 
 export default function Contact() {
@@ -6,6 +6,11 @@ export default function Contact() {
   const [age, setAge] = useState('');
   const [mail, setMial] = useState('');
   const [pass, setpass] = useState('');
+  
+  useEffect(() => {
+    document.title = "Contact";
+  }, []);
+  
 
   return <>
     <div className="container h-100 py-5">

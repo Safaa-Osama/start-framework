@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect} from "react";
 import house from '../../assets/Images/poert1.png'
 import cake from '../../assets/Images/port2.png'
 import home from '../../assets/Images/port3.png'
@@ -10,6 +10,11 @@ import LightBox from "../LightBox/LightBox";
 export default function Portofolio() {
   const [opened, setOpened] = useState(false);
   const [imageSec, setImageSec] = useState(house);
+
+  useEffect(() => {
+    document.title = "Portofolio";
+  }, []);
+  
 
   return (
     <>
